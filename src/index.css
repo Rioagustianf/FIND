@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #15343b;
+  --secondary: #2d5c67;
+  --bg: #002337;
+}
+
+body {
+  background-color: var(--bg);
+}
+
+.about-film {
+  @apply bg-gray-900 text-white p-4;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 100%);
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
